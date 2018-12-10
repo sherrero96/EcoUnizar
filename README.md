@@ -44,7 +44,8 @@ cd DB
 echo '\n\n--------OPERACIONES DE usuario--------\n\n'
 echo '\n\n--------clave: password--------\n\n'
 mysql -u usuario -p sistemasinformacion < Database/creacionTablas.sql
-mysql -u usuario -p sistemasinformacion < Database/crearUsuariosIniciales.sql --force
+mysql -u usuario -p sistemasinformacion < Database/crearUsuariosIniciales.sql
+mysql -u usuario -p sistemasinformacion < Database/datosIniciales.sql
 
 mysql -u usuario -p -e 'USE sistemasinformacion'
 
