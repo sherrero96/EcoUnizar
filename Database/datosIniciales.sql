@@ -7,8 +7,8 @@ INSERT INTO Usuario (correo, password, rol, nombre, nacimiento, puntuacion, idGr
 ('profesor2@unizar.es', 'profesor2', 1, 'Profesor2', 1980, 0, 1),
 ('alumno1@unizar.es', '$2a$10$V/Dp3mipwXyZeFiLlvshAu1NwS9q2e3L5R9VY2sHsOK9QfcKyGVGS', 2, 'Alumno1', 1996, 0, 2),
 ('alumno2@unizar.es', 'alumno2', 2, 'Alumno2', 1997, 0, 3),
-('persona1@unizar.es', 'persona1', 3, 'Persona1', 1985, 0, 1),
-('persona2@unizar.es', 'persona2', 3, 'Persona2', 1988, 0, 1);
+('persona1@unizar.es', '$2a$10$yuEpUAmjh7FCSYFQvIZm3.7FnYKW7uAcq5warI7mQ56m4iMpdUTM6', 3, 'Persona1', 1985, 0, 1),
+('persona2@unizar.es', '$2a$10$faWpVtHI/bHEdqD4CoXGKuVJ40ywTG.ygVVvN/lRt02oqBOW.osFu', 3, 'Persona2', 1988, 0, 1);
 
 INSERT INTO Entrada (nombreImagen, titulo, fecha, noticia, reto, consejo, estado, idGrupo) VALUES
 ('img/img1.jpg','La contaminacion ambiental', null,'CUERPO DE LA NOTICIA1', '¿Te atreves a venir andando a la universidad/trabajo durante una semana?',
