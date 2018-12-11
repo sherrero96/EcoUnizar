@@ -13,7 +13,6 @@ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://ftp.utexas.edu/ma
 sudo apt update
 
 sudo apt install mariadb-server 
-sudo apt-get install git
 
 printf '\n\nINSTALACIÓN DE ECOUNIZAR\n\n'
 mkdir ecoUnizar
@@ -28,7 +27,6 @@ sudo mysql -u root -p -e "CREATE DATABASE sistemasinformacion"
 sudo mysql -u root -p -e "CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password'"
 sudo mysql -u root -p -e "Grant ALL ON sistemasinformacion.* TO usuario@localhost"
 
-cd DB
 echo '\n\n--------OPERACIONES DE usuario--------\n\n'
 echo '\n\n--------clave: password--------\n\n'
 mysql -u usuario -p sistemasinformacion < Database/creacionTablas.sql
@@ -41,3 +39,6 @@ mysql -u usuario -p -e 'USE sistemasinformacion'
 wget http://apache.rediris.es/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
 sudo tar -zxvf apache-tomcat-8.5.35.tar.gz -C /var/local/
 sudo /var/local/apache-tomcat-8.5.35/bin/startup.sh
+
+# Copiar war en webapps
+sudo cp EcoUnizar.war /var/local/apache-tomcat-8.5.35/webapps/
