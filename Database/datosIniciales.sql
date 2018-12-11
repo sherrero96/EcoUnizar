@@ -11,9 +11,20 @@ INSERT INTO Usuario (correo, password, rol, nombre, nacimiento, puntuacion, idGr
 ('persona2@unizar.es', '$2a$10$faWpVtHI/bHEdqD4CoXGKuVJ40ywTG.ygVVvN/lRt02oqBOW.osFu', 3, 'Persona2', 1988, 0, 1);
 
 INSERT INTO Entrada (nombreImagen, titulo, fecha, noticia, reto, consejo, estado, idGrupo) VALUES
-('img/img1.jpg','La contaminacion ambiental', null,'CUERPO DE LA NOTICIA1', '¿Te atreves a venir andando a la universidad/trabajo durante una semana?',
+('img/img1.jpg','La contaminacion ambiental', null,'La contaminación ambiental se refiere a la presencia de agentes externos de origen ya sea físico; químico o biológico, que atentan contra la integridad de la naturaleza, llegando a ser nocivo no solo para el ambiente, sino también para los seres vivos que vivimos en él.
+
+Igualmente, cuando la contaminación ambiental se instaura también se va afectando el bienestar de la población; progresando en muchos de los casos a ser perjudiciales no solo para la vida humana, sino también para la vida animal y la existencia de las especies de flora.
+
+El mecanismo de producción de la contaminación del ambiente se asocia a la incorporación de cuerpos que atraen las sustancias sólidas; líquidas y gaseosas, incluso la combinación de todas ellas; alterando las condiciones naturales que lo han acreditado desde sus orígenes como un entorno ideal para los seres vivos.
+
+A medida que el hombre va adquiriendo más poder en la naturaleza; las posibilidades de empeorar la situación ambiental se incrementan si no se toman acciones a tiempo; pues muchas de las actividades realizadas por esta población deterioran las condiciones que integran el medio ideal.
+
+El comportamiento social del hombre en conjunto con su cultura siempre va adaptando el ambiente de acuerdo a sus necesidades, y muchas veces estos requerimientos no son compatibles con el equilibrio ecológico; lo que hace que la población humana busque los medios para mantenerse en confort, sea o no bueno para la salud del ecosistema.', '¿Te atreves a venir andando a la universidad/trabajo durante una semana?',
    'Si guardas los botes de café que uses, puedes usarlos para guardar bolígrafos e incluso decorarlos.',1,2),
-('img/img2.jpg','La contaminacion sonora', null,'CUERPO DE LA NOTICIA2', 'Durante una semana no compres alimentos envasados individualmente.',
+('img/img2.jpg','La contaminacion sonora', null,'Los sonidos muy fuertes provocan molestias que van desde el sentimiento de desagrado y la incomodidad hasta daños irreversibles en el sistema auditivo. La presión acústica se mide en decibelios (dB) y los especialmente molestos son los que corresponden a los tonos altos (dB-A). La presión del sonido se vuelve dañina a unos 75 dB-A y dolorosa alrededor de los 120 dB-A. Puede causar la muerte cuando llega a 180 dB-A. El límite de tolerancia recomendado por la Organización Mundial de la Salud es de 65 dB-A.
+El oído necesita algo más de 16 horas de reposo para compensar 2 horas de exposición a 100 dB (discoteca ruidosa). Los sonidos de más de 120 dB (banda ruidosa de rock o volumen alto en los auriculares) pueden dañar a las células sensibles al sonido del oído interno provocando pérdidas de audición. 
+
+España es el país más ruidoso de Europa y los datos obtenidos de 23 ciudades españolas en las que se ha realizado el mapa de ruidos, señalan que el nivel de ruido equivalente, durante el día, está en valores que varían de los 62 a los 73 dB.', 'Durante una semana no compres alimentos envasados individualmente.',
    'Guarda siempre una bolsa de plástico en la mochila por si la necesitas cuando vayas a comprar.',1,3);
 
 INSERT INTO Cuestionario (tipo, pregunta, numFallos, numAciertos, posCorrecta, idEntrada) VALUES
