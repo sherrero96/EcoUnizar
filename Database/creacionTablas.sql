@@ -1,11 +1,11 @@
-create table grupo
+create table Grupo
 (
   id     tinyint(3) auto_increment
     primary key,
   nombre varchar(50) not null
 );
 
-create table entrada
+create table Entrada
 (
   id           smallint(4) auto_increment
     primary key,
@@ -21,7 +21,7 @@ create table entrada
   foreign key (idGrupo) references grupo (id)
 );
 
-create table cuestionario
+create table Cuestionario
 (
   tipo        tinyint(1)  not null,
   pregunta    varchar(50) not null,
@@ -34,7 +34,7 @@ create table cuestionario
   foreign key (idEntrada) references entrada (id)
 );
 
-create table respuesta
+create table Respuesta
 (
   posicion         tinyint(1)  not null,
   cuerpo           varchar(50) not null,
@@ -45,7 +45,7 @@ create table respuesta
   foreign key (idEntrada, tipoCuestionario) references cuestionario (idEntrada, tipo)
 );
 
-create table usuario
+create table Usuario
 (
   correo     varchar(50) not null,
   password   varchar(20) not null,
@@ -59,7 +59,7 @@ create table usuario
   foreign key (idGrupo) references grupo (id)
 );
 
-create table contestar
+create table Contestar
 (
   idEntrada   smallint(4) not null,
   tipo        tinyint(1)  not null,
