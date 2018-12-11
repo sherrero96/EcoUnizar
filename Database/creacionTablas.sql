@@ -18,7 +18,7 @@ create table Entrada
   estado       tinyint(1) default '0' null,
   idGrupo      tinyint(3)             not null,
   constraint FK_grupo_id_entrada
-  foreign key (idGrupo) references grupo (id)
+  foreign key (idGrupo) references Grupo (id)
 );
 
 create table Cuestionario
@@ -31,7 +31,7 @@ create table Cuestionario
   idEntrada   smallint(4) not null,
   primary key (idEntrada, tipo),
   constraint FK_entrada_id_cuestionario
-  foreign key (idEntrada) references entrada (id)
+  foreign key (idEntrada) references Entrada (id)
 );
 
 create table Respuesta
@@ -42,7 +42,7 @@ create table Respuesta
   idEntrada        smallint(4) not null,
   primary key (idEntrada, tipoCuestionario, posicion),
   constraint FK_cuestionario_tipo_respuesta
-  foreign key (idEntrada, tipoCuestionario) references cuestionario (idEntrada, tipo)
+  foreign key (idEntrada, tipoCuestionario) references Cuestionario (idEntrada, tipo)
 );
 
 create table Usuario
@@ -56,7 +56,7 @@ create table Usuario
   idGrupo    tinyint(3)  not null,
   primary key (correo),
   constraint FK_grupo_id_usuario
-  foreign key (idGrupo) references grupo (id)
+  foreign key (idGrupo) references Grupo (id)
 );
 
 create table Contestar
@@ -67,7 +67,7 @@ create table Contestar
   posPregunta tinyint(1)  not null,
   primary key (idEntrada, tipo, correo, posPregunta),
   constraint FK_tipo_cuestionario_contestar
-  foreign key (idEntrada, tipo) references cuestionario (idEntrada, tipo),
+  foreign key (idEntrada, tipo) references Cuestionario (idEntrada, tipo),
   constraint FK_usuario_contestar
-  foreign key (correo) references usuario (correo)
+  foreign key (correo) references Usuario (correo)
 );
