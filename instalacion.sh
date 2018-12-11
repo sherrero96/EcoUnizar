@@ -20,6 +20,7 @@ cd ecoUnizar
 
 git clone 'https://github.com/sherrero96/EcoUnizar.git'
 cd EcoUnizar
+chmod +x instalacion.sh
 
 
 echo '\n\n--------OPERACIONES DE ROOT--------\n\n'
