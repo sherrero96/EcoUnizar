@@ -48,7 +48,7 @@ create table Respuesta
 create table Usuario
 (
   correo     varchar(50) not null,
-  password   varchar(20) not null,
+  password   varchar(60) not null,
   rol        tinyint(1)  not null,
   nombre     varchar(20) not null,
   nacimiento smallint(4) not null,
