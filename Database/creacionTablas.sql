@@ -24,7 +24,7 @@ create table Entrada
 create table Cuestionario
 (
   tipo        tinyint(1)  not null,
-  pregunta    varchar(100) not null,
+  pregunta    varchar(200) not null,
   numFallos   tinyint(3)  not null,
   numAciertos tinyint(3)  not null,
   posCorrecta tinyint(1)  not null,
