@@ -15,7 +15,7 @@ printf "\n\nActualizando paquetes\n\n"
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-printf '\n\nINSTALACIÓN DE JAVA, SQL y GIT\n\n'
+printf "\n\nINSTALACIÓN DE JAVA, SQL y GIT\n\n"
 sudo apt-get install default-jdk -y
 
 sudo apt-get install software-properties-common
@@ -35,14 +35,14 @@ git clone 'https://github.com/sherrero96/EcoUnizar.git'
 cd EcoUnizar
 
 
-echo '\n\n--------OPERACIONES DE ROOT--------\n\n'
+printf "\n\n--------OPERACIONES DE ROOT--------\n\n"
 sudo mysql -u root -p -e "CREATE DATABASE sistemasinformacion"
 sudo mysql -u root -p -e "CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password'"
 sudo mysql -u root -p -e "Grant ALL ON sistemasinformacion.* TO usuario@localhost"
 
-cd DB
-echo '\n\n--------OPERACIONES DE usuario--------\n\n'
-echo '\n\n--------clave: password--------\n\n'
+
+printf "\n\n--------OPERACIONES DE usuario--------\n\n"
+printf "\n\n--------clave: password--------\n\n"
 mysql -u usuario -p sistemasinformacion < Database/creacionTablas.sql
 mysql -u usuario -p sistemasinformacion < Database/crearUsuariosIniciales.sql
 mysql -u usuario -p sistemasinformacion < Database/datosIniciales.sql
