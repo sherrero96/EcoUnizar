@@ -26,7 +26,7 @@ El oído necesita algo más de 16 horas de reposo para compensar 2 horas de expo
 España es el país más ruidoso de Europa y los datos obtenidos de 23 ciudades españolas en las que se ha realizado el mapa de ruidos, señalan que el nivel de ruido equivalente, durante el día, está en valores que varían de los 62 a los 73 dB.', 'Durante una semana no compres alimentos envasados individualmente.',
    'Guarda siempre una bolsa de plástico en la mochila por si la necesitas cuando vayas a comprar.',1,3),
    ('img/img3.jpg',
- 'Los patinetes eléctricos se vieron involucrados en casi 300 accidentes en 2018',
+ '300 accidentes de patinetes eléctricos',
  null,
  'El fiscal coordinador de Seguridad Vial, Bartolomé Vargas, quiere una mayor vigilancia de los últimos vehículos en llegar a nuestras calles: los patinetes eléctricos. Para ello, la Fiscalía ha enviado este jueves un oficio a todas las policías locales para que se esmeren en la investigación de los también llamados Vehículos de Movilidad Personal (VMP), que se han visto involucrados en un total de 273 accidentes en lo que llevamos de 2018. Vargas ha hecho especial hincapié en la responsabilidad de los conductores de patinetes y también de bicicletas en accidentes que impliquen a peatones y ha lamentado "el extendido desconocimiento de las normas viales" que tienen muchos ciclistas y patinadores.',
  'Convence a un amigo a comprar una basura que separa plasticos,papel y organico',
