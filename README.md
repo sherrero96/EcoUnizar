@@ -4,7 +4,7 @@ Repositorio de la aplicación web EcoUnizar
 # Auditoria
 * [Sergio Herrero](https://github.com/sherrero96)
 * [José Félix Longares](https://github.com/pepelongares)
-* [Bolu Li Yuan](https://github.com/BoliLi)
+* [Bolu Li Yuan](https://github.com/bolumclol)
 
 #	INSTALACIÓN DE LA APLICACION WEB ECOUNIZAR
 Explicación para el despliegue en ubuntu 18.04
