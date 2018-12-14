@@ -15,17 +15,16 @@ printf "\n\nActualizando paquetes\n\n"
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-printf "\n\nINSTALACIÓN DE JAVA, SQL y GIT\n\n"
+printf '\n\nINSTALACIÓN DE JAVA, SQL y GIT\n\n'
 sudo apt-get install default-jdk -y
 
 sudo apt-get install software-properties-common
 sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://ftp.utexas.edu/mariadb/repo/10.3/ubuntu bionic main'
 
-sudo apt update
+sudo apt update -y
 
-sudo apt install mariadb-server 
-sudo apt-get install git
+sudo apt install mariadb-server -y
 
 printf '\n\nINSTALACIÓN DE ECOUNIZAR\n\n'
 mkdir ecoUnizar
@@ -33,16 +32,16 @@ cd ecoUnizar
 
 git clone 'https://github.com/sherrero96/EcoUnizar.git'
 cd EcoUnizar
+chmod +x instalacion.sh
 
 
-printf "\n\n--------OPERACIONES DE ROOT--------\n\n"
+echo '\n\n--------OPERACIONES DE ROOT--------\n\n'
 sudo mysql -u root -p -e "CREATE DATABASE sistemasinformacion"
 sudo mysql -u root -p -e "CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password'"
 sudo mysql -u root -p -e "Grant ALL ON sistemasinformacion.* TO usuario@localhost"
 
-
-printf "\n\n--------OPERACIONES DE usuario--------\n\n"
-printf "\n\n--------clave: password--------\n\n"
+echo '\n\n--------OPERACIONES DE usuario--------\n\n'
+echo '\n\n--------clave: password--------\n\n'
 mysql -u usuario -p sistemasinformacion < Database/creacionTablas.sql
 mysql -u usuario -p sistemasinformacion < Database/crearUsuariosIniciales.sql
 mysql -u usuario -p sistemasinformacion < Database/datosIniciales.sql
@@ -53,9 +52,9 @@ mysql -u usuario -p -e 'USE sistemasinformacion'
 wget http://apache.rediris.es/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
 sudo tar -zxvf apache-tomcat-8.5.35.tar.gz -C /var/local/
 sudo /var/local/apache-tomcat-8.5.35/bin/startup.sh
+
+# Copiar war en webapps
+sudo cp EcoUnizar.war /var/local/apache-tomcat-8.5.35/webapps/
 ```
 
-# Copiar la aplicacion war en la ruta webapps de tomcat
-```ssh
 
-```
