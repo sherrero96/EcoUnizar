@@ -7,8 +7,8 @@ INSERT INTO Usuario (correo, password, rol, nombre, nacimiento, puntuacion, idGr
 ('profesor2@unizar.es', '$2a$10$VAIe.yfZr.3Ior67PuCEZeQTw/GoOXBLgkJ7xXMLZCmnCLPHUerSO', 1, 'Profesor2', 1980, 0, 1),
 ('alumno1@unizar.es', '$2a$10$AlC0fUK9H41TsO3Y5QWPquOllb57lNAlu0tlgj4bgk3Kt6ktFGRW.', 2, 'Alumno1', 1996, 0, 2),
 ('alumno2@unizar.es', '$2a$10$713deL0biCu40lKveexZN.0ka7uxu/hdTioB6QY2N1cMl0OavDiWy', 2, 'Alumno2', 1997, 0, 3),
-('persona1@unizar.es', '$2a$10$yuEpUAmjh7FCSYFQvIZm3.7FnYKW7uAcq5warI7mQ56m4iMpdUTM6', 3, 'Persona1', 1985, 0, 1),
-('persona2@unizar.es', '$2a$10$d/YBCKDJlkINGuVeLerp.egW9TjHw2F86LLH1E6rECu..761MGx7S', 3, 'Persona2', 1988, 0, 1);
+('persona1@unizar.es', '$2a$10$yuEpUAmjh7FCSYFQvIZm3.7FnYKW7uAcq5warI7mQ56m4iMpdUTM6', 3, 'Persona1', 1985, 6, 1),
+('persona2@unizar.es', '$2a$10$d/YBCKDJlkINGuVeLerp.egW9TjHw2F86LLH1E6rECu..761MGx7S', 3, 'Persona2', 1988, 3, 1);
 
 INSERT INTO Entrada (nombreImagen, titulo, fecha, noticia, reto, consejo, estado, idGrupo) VALUES
 ('img/img1.jpg','La contaminacion ambiental', null,'La contaminación ambiental se refiere a la presencia de agentes externos de origen ya sea físico; químico o biológico, que atentan contra la integridad de la naturaleza, llegando a ser nocivo no solo para el ambiente, sino también para los seres vivos que vivimos en él.<br/><br/>
